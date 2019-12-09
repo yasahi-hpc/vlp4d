@@ -1,0 +1,28 @@
+** Definition of mesh
+Number of points in Ex with the coarse mesh : 256
+Number of points in Ey with the coarse mesh : 4
+Number of points in Vx with the coarse mesh : 256
+Number of points in Vy with the coarse mesh : 4
+
+** Defintion of the geometry of the domain
+Minimal value of Ex : 0.
+Maximal value of Ex : 25.13274122871834590
+Minimal value of Ey : 0.
+Maximal value of Ey : 25.13274122871834590
+
+Minimal value of Vx : -9.
+Maximal value of Vx :  9.
+Minimal value of Vy : -9.
+Maximal value of Vy :  9.
+
+** Cas test considere 
+ -10- Landau Damping
+ -11- Landau Damping 2
+ -20- Two beam instability
+Number of the chosen test case : 20
+
+** Iterations in time and diagnostics
+Time step : 0.125
+Number of total iterations : 512
+Frequency of diagnostics : 8
+Diagnostics of fxvx : 1
