@@ -1,0 +1,16 @@
+# Compiled Object files
+src_kokkos/*.slo
+src_kokkos/*.lo
+src_kokkos/*.o
+src_kokkos/*.obj
+
+src_openacc/*.slo
+src_openacc/*.lo
+src_openacc/*.o
+src_openacc/*.obj
+
+# Batch scripts and input data
+wk/*
+!wk/*.sh
+!wk/*.dat
+!wk/batch_scripts
