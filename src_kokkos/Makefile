@@ -8,7 +8,6 @@ default: build
 
 # Nvidia TeslaP100 on Tsubame3.0 (Tokyo Tech, Japan)
 ifneq (,$(findstring p100,$(KOKKOS_DEVICES)))
-KOKKOS_PATH = /home/1/17IKA143/work2019/lib/kokkos
 CXX = ${KOKKOS_PATH}/bin/nvcc_wrapper
 CXXFLAGS = -O3
 ifneq (,$(findstring 3D,$(RANGE_POLICY)))
@@ -29,7 +28,6 @@ endif
 
 # Intel Broadwell on Tsubame3.0 (Tokyo Tech, Japan)
 ifneq (,$(findstring bdw,$(KOKKOS_DEVICES)))
-KOKKOS_PATH = /home/1/17IKA143/work2019/lib/kokkos
 CXX = icpc
 CXXFLAGS = -O3
 ifneq (,$(findstring 3D,$(RANGE_POLICY)))
@@ -49,7 +47,6 @@ endif
 
 # Nvidia TeslaV100 on Summit (OLCF, US)
 ifneq (,$(findstring v100,$(KOKKOS_DEVICES)))
-KOKKOS_PATH = /ccs/home/yasahi/lib/kokkos
 CXX = ${KOKKOS_PATH}/bin/nvcc_wrapper
 CXXFLAGS = -O3
 ifneq (,$(findstring 3D,$(RANGE_POLICY)))
@@ -70,7 +67,6 @@ endif
 
 # Intel Skylake on JFRS-1 (IFERC-CSC, Japan)
 ifneq (,$(findstring skx,$(KOKKOS_DEVICES)))
-KOKKOS_PATH = /home/asahiy/lib/kokkos
 CXX = CC
 CXXFLAGS = -O3
 ifneq (,$(findstring 3D,$(RANGE_POLICY)))
@@ -90,7 +86,6 @@ endif
 
 ifneq (,$(findstring tx2,$(KOKKOS_DEVICES)))
 # Marvell Thunder X2 on CEA Computing Complex (CEA, France)
-KOKKOS_PATH = /ccc/home/cont002/qst/asahiy/lib/src/kokkos
 CXX=armclang++
 CXXFLAGS=-O3 -armpl
 ifneq (,$(findstring 3D,$(RANGE_POLICY)))
