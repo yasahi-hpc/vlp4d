@@ -27,8 +27,8 @@ Detailed descriptions of the test cases can be found in
 # HPC
 From the view point of high perfomrance computing (HPC), the code is parallelized with OpenMP without MPI domain decomposition.
 In order to investigate the performance portability of this kind of kinietic plasma simulation codes, we implement the mini-app with
-a mixed OpenACC/OpenMP and Kokkos, where we suppress unnecessary duplications of code lines. The detailed description is found in
-- Yuuichi Asahi, Guillaume Latu, Virginie Grandgirard, and Julien Bigot, (Performance Portable Implementation of a Kinetic Plasma Simulation Mini-app, in Proceedings of Sixth Workshop on Accelerator Programming Using Directives (WACCPD), IEEE, 2019. (accepted)
+a mixed OpenACC/OpenMP and Kokkos, where we suppress unnecessary duplications of code lines. The detailed description and obtained performance is found in
+- Yuuichi Asahi, Guillaume Latu, Virginie Grandgirard, and Julien Bigot, "Performance Portable Implementation of a Kinetic Plasma Simulation Mini-app", in Proceedings of Sixth Workshop on Accelerator Programming Using Directives (WACCPD), IEEE, 2019. (accepted)
 https://sc19.supercomputing.org/proceedings/workshops/workshop_files/ws_waccpd104s2-file1.pdf
 
 # Test environments
