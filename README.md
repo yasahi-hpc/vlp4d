@@ -22,7 +22,9 @@ Detailed descriptions of the test cases can be found in
   http://people.rennes.inria.fr/Nicolas.Crouseilles/cgls2.pdf
 - Crouseilles & al. Beam Dynamics Newsletter no 41 (2006).
   Section 3.3, Beam focusing pb.
-  http://icfa-bd.kek.jp/Newsletter41.pdf
+  http://icfa-bd.kek.jp/Newsletter41.pdf  
+  
+For questions or comments, please find us in the AUTHORS file.
 
 # HPC
 From the view point of high perfomrance computing (HPC), the code is parallelized with OpenMP without MPI domain decomposition.
