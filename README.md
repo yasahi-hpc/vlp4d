@@ -69,6 +69,8 @@ make
 ```
 
 ### Kokkos version
+First of all, you need to install kokkos on your environment. Instructions are found in https://github.com/kokkos/kokkos. In the following example, it is assumed that kokkos is located at "your_kokkos_path".
+
 ```
 export KOKKOS_PATH=your_kokkos_path # set your_kokkos_path
 export DEVICE=device_name # choose the device_name from "p100", "v100", "bdw", "skx", "tx2"
