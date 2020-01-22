@@ -79,8 +79,8 @@ cd src_kokkos
 make
 ```
 
-## Run
-Depending on your configuration, you may have to modify the job.sh in wk and sub.sh in wk/batch_scripts.
+## Test
+Depending on your configuration, you may have to modify the job.sh in wk and sub_*.sh in wk/batch_scripts.
 
 ```
 cd wk
@@ -88,4 +88,15 @@ cd wk
 gnuplot -e 'plot "nrj.out" u 2 w l, "nrj_SLD10" u 2; pause -1' 
 ```
 
-To checkout if results are OK, the nrj curve should be close enough to nrj_SLD10.
+To checkout if results are OK, the nrj curve should be close enough to nrj_SLD10.  
+For the performance measurement to reproduce the results in SC paper, you should change the argment in the bash script from "SLD10.dat" to "SLD10_large.dat". For example, in wk/batch_scripts/sub_p100_kokkos.sh, the last line should be changed as follows. 
+
+```
+Original (Before change)
+./vlp4d.p100_kokkos SLD10.dat
+SC19 (After change)
+./vlp4d.p100_kokkos SLD10_large.dat
+```
+You can also try the two beam instability by setting the argument as "TSI20.dat".
+
+
