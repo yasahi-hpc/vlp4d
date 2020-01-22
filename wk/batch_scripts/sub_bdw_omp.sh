@@ -11,4 +11,4 @@ module load fftw/3.3.8
 export OMP_NUM_THREADS=14
 export OMP_PROC_BIND=true
 
-./vlp4d.bdw_omp SLD10_large.dat
+./vlp4d.bdw_omp SLD10.dat

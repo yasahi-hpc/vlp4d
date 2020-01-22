@@ -8,4 +8,4 @@ module load arm-compiler/19.2.0 gnu/8.3.0
 module list
  
 export OMP_NUM_THREADS=32
-srun ./vlp4d.tx2_kokkos --kokkos-threads=32 SLD10_large.dat
+srun ./vlp4d.tx2_kokkos --kokkos-threads=32 SLD10.dat

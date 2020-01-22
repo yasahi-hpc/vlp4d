@@ -7,4 +7,4 @@
 module load intel
 module load cuda/8.0.61
 
-./vlp4d.p100_acc SLD10_large.dat
+./vlp4d.p100_acc SLD10.dat

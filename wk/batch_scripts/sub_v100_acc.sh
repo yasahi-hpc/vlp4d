@@ -13,5 +13,5 @@ cp ./vlp4d.v100_acc $MEMBERWORK/csc367
 cp SLD10.dat $MEMBERWORK/csc367
 cd $MEMBERWORK/csc367
 
-jsrun -n 1 -g1 --smpiargs="-disable_gpu_hooks" ./vlp4d.v100_acc SLD10_large.dat
+jsrun -n 1 -g1 --smpiargs="-disable_gpu_hooks" ./vlp4d.v100_acc SLD10.dat
 cp nrj.out $LS_SUBCWD

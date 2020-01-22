@@ -18,4 +18,4 @@ module load cray-fftw
 export OMP_NUM_THREADS=40
 export OMP_PROC_BIND=true
  
-srun ./vlp4d.skx_omp SLD10_large.dat
+srun ./vlp4d.skx_omp SLD10.dat
