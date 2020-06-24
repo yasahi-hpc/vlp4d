@@ -304,12 +304,12 @@ namespace Impl {
       d_buffers_nx1_r2c_                = view_2d("buffer_1d_nx1_r2c", nb_threads, nx1_);
       d_buffers_nx1_c2r_                = view_2d("buffer_1d_nx1_c2r", nb_threads, nx1_+2);
 
-      dptr_buffer_c_                  = d_buffer_c_.ptr_on_device();
-      thread_private_buffers_nx1h_    = d_thread_private_buffers_nx1h_.ptr_on_device();
-      thread_private_buffers_nx2_     = d_thread_private_buffers_nx2_.ptr_on_device();
-      thread_private_buffers_nx2_out_ = d_thread_private_buffers_nx2_out_.ptr_on_device();
-      thread_private_buffers_nx1_r2c_ = d_buffers_nx1_r2c_.ptr_on_device();
-      thread_private_buffers_nx1_c2r_ = d_buffers_nx1_c2r_.ptr_on_device();
+      dptr_buffer_c_                  = d_buffer_c_.data();
+      thread_private_buffers_nx1h_    = d_thread_private_buffers_nx1h_.data();
+      thread_private_buffers_nx2_     = d_thread_private_buffers_nx2_.data();
+      thread_private_buffers_nx2_out_ = d_thread_private_buffers_nx2_out_.data();
+      thread_private_buffers_nx1_r2c_ = d_buffers_nx1_r2c_.data();
+      thread_private_buffers_nx1_c2r_ = d_buffers_nx1_c2r_.data();
     }
   };
 };

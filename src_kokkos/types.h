@@ -26,9 +26,10 @@ typedef view_1d::HostMirror view_1d_host;
 
 typedef Kokkos::View<complex64*, execution_space> complex_view_1d;
 typedef Kokkos::View<complex64**, execution_space> complex_view_2d;
+typedef Kokkos::View<complex64***, execution_space> complex_view_3d;
 
 // Used for 3D loops
-typedef typename Kokkos::Experimental::MDRangePolicy< Kokkos::Experimental::Rank<3, Kokkos::Experimental::Iterate::Default, Kokkos::Experimental::Iterate::Default> > MDPolicyType_3D;
+typedef typename Kokkos::MDRangePolicy< Kokkos::Rank<3, Kokkos::Iterate::Default, Kokkos::Iterate::Default> > MDPolicyType_3D;
 
 template <unsigned ND> using coord_t = std::array<int, ND>;
 template <unsigned ND> using shape_t = std::array<int, ND>;

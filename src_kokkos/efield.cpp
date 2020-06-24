@@ -51,7 +51,7 @@ void Efield::solve_poisson_fftw(double xmax, double ymax)
   const complex64 I = complex64(0., 1.);
   
   // Forward 2D FFT (Real to Complex)
-  fft_->fft2(rho_.ptr_on_device(), rho_hat_.ptr_on_device());
+  fft_->fft2(rho_.data(), rho_hat_.data());
 
   // Solve Poisson equation in Fourier space
   complex_view_2d ex_hat  = ex_hat_;
@@ -92,7 +92,7 @@ void Efield::solve_poisson_fftw(double xmax, double ymax)
   });
 
   // Backward 2D FFT (Complex to Real)
-  fft_->ifft2(rho_hat.ptr_on_device(), rho_.ptr_on_device());
-  fft_->ifft2(ex_hat.ptr_on_device(),  ex_.ptr_on_device());
-  fft_->ifft2(ey_hat.ptr_on_device(),  ey_.ptr_on_device());
+  fft_->ifft2(rho_hat.data(), rho_.data());
+  fft_->ifft2(ex_hat.data(),  ex_.data());
+  fft_->ifft2(ey_hat.data(),  ey_.data());
 }
