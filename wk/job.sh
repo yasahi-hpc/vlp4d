@@ -17,6 +17,9 @@ elif ls *.v100_kokkos > /dev/null 2>&1; then
 elif ls *.v100_acc > /dev/null 2>&1; then
   # Nvidia TeslaV100 on Summit (OLCF, US)
   bsub batch_scripts/sub_v100_acc.sh
+elif ls *.v100_omp4.5 > /dev/null 2>&1; then
+  # Nvidia TeslaV100 on Summit (OLCF, US)
+  bsub batch_scripts/sub_v100_omp4.5.sh
 elif ls *.skx_kokkos > /dev/null 2>&1; then
   # Intel Skylake on JFRS-1 (IFERC-CSC, Japan)
   sbatch batch_scripts/sub_skx_kokkos.sh
